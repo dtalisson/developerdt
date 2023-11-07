@@ -1,11 +1,13 @@
 
 @keyframes borderAnimation {
     0% {
-      border-color: #f1f1f1;
-    }
-    100% {
-      border-color: #00FF08;
-    }
+        box-shadow: 0 0 20px #00FF08;
+        top: 0px
+      }
+      100% {
+        box-shadow: 0 0 20px #005503;
+        top:5px
+      }
   }
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
@@ -17,6 +19,14 @@
         list-style: none;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
+}
+h2.title { 
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+.flex { 
+    display: flex;
 }
 /*  GERAL */
 body { 
@@ -78,57 +88,107 @@ header .interface .logo a {
     font-weight: bold;
     color: #00FF08;
 }
-
+/* LINK DA LOGO  */
 .menu-principal { 
     margin: 6rem 0rem;
+    padding: 0px 4%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    
+    justify-content: space-between; 
 }
+/*  MENU PRINCIPAL - TOPO DO SITE */
 
 .ladoEsquerdo-menu-principal { 
     width: 40%;
     margin: auto;
     padding: 2rem;
 }
+/* LADO ESQUERDO DO MENU PRINCIPAL */
 .ladoEsquerdo-menu-principal h1 { 
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
+    line-height: 45px;
 }
-.ladoEsquerdo-menu-principal  span { 
+/* LADO ESQUERDO H1   */
+span { 
     color: #00FF08;
 }
+/*  LADO ESQUERDO SPAN ( PONTO )  */
 .ladoEsquerdo-menu-principal p { 
     margin: 2rem 0rem;
     font-size: 1.2rem;
 }
+/*  LADO ESQUERDO P  */
 .ladoEsquerdo-menu-principal .btn-contato button { 
-    padding: .6rem 2.1rem;
+    padding: .8rem 2rem;
     background-color: #00FF08;
     border:none;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: black;
     cursor: pointer;
+    transition: .2s;
 }
+/* LADO ESQUERDO BOTÃO - ENTRE EM CONTATO   */
 .ladoEsquerdo-menu-principal .btn-contato button:hover { 
     box-shadow: 0px 0px 8px #00FF08;
+    transform: scale(1.05);
 }
+/* HOVER DO BOTÃO ENTRE EM CONTATO  */
 
 .ladoDireito-menu-principal { 
     width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+/* LADO DIREITO DO MENU PRINCIPAL  */
 .ladoDireito-menu-principal img { 
     max-width: 100%;
     border: 1px solid #00ff085d;
     border-radius: 50%;
     background-color: #00ff08d5;
     padding: .2rem;
-    animation: borderAnimation 1.5s infinite alternate;
-   
+    animation: borderAnimation 2s ease-in-out infinite alternate;
+    position: relative;  
+}
+/*  LADO DIREITO DA IMAGEM COM [DIREITO A ANIMAÇÃO] */
+
+section .menu-especialidades { 
+    padding: 0px 1%;
+    
+}
+
+.menu-especialidades .box-especialidades { 
+    margin: 8rem 0rem;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 40px;
+    transition: .2s;
+
+}
+.menu-especialidades .box-especialidades:hover { 
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.788);
+}
+.menu-especialidades .flex { 
+    gap: 2rem;
+}
+.menu-especialidades .box-especialidades h3 { 
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+.menu-especialidades .box-especialidades i { 
+    font-size: 9rem;
+    color:#00ff08d5;
+}
+.menu-especialidades .box-especialidades p { 
+    color: rgba(255, 255, 255, 0.548);
+
 }
