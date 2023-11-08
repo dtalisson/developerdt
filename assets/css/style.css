@@ -90,7 +90,7 @@ header .interface .logo a {
 }
 /* LINK DA LOGO  */
 .menu-principal { 
-    margin: 6rem 0rem;
+    margin: 8rem 0rem;
     padding: 0px 4%;
     width: 100%;
     display: flex;
@@ -158,8 +158,8 @@ span {
 }
 /*  LADO DIREITO DA IMAGEM COM [DIREITO A ANIMAÇÃO] */
 
-section .menu-especialidades { 
-    padding: 0px 1%;
+section.menu-especialidades { 
+    padding: 50px 1%;
     
 }
 
@@ -174,7 +174,7 @@ section .menu-especialidades {
 .menu-especialidades .box-especialidades:hover { 
     transform: scale(1.05);
     cursor: pointer;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.788);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.466);
 }
 .menu-especialidades .flex { 
     gap: 2rem;
@@ -192,3 +192,61 @@ section .menu-especialidades {
     color: rgba(255, 255, 255, 0.548);
 
 }
+
+section.about {
+    padding: 40px 4%;
+}
+
+.about .ladoEsquerdoAbout { 
+    width: 40%;
+    
+}
+.about .ladoEsquerdoAbout img { 
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.about .ladoDireitoAbout { 
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 1rem 0rem;
+    
+}
+.about .ladoDireitoAbout h2 { 
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: bold;
+}
+.about .ladoDireitoAbout span { 
+    display: block;
+    text-transform: uppercase;
+}
+.about .ladoDireitoAbout p { 
+    margin: 3rem 5rem 1rem 0rem;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.548);
+}
+.about .ladoDireitoAbout .btn-social  { 
+    margin: 1rem 0rem;
+}
+.about .ladoDireitoAbout .btn-social button { 
+    width: 50px;
+    font-size: 2.2rem;
+    height: 50px;
+    border-radius:50%;
+    margin: .2rem;
+    border: none;
+    background: #00FF08;
+    cursor: pointer;
+    transition: .2s;
+}
+.about .ladoDireitoAbout .btn-social button:hover { 
+    transform: scale(1.05);
+}
+
+
+    
