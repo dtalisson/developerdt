@@ -13,6 +13,7 @@
     <!-- THE END BOX ICON -->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -151,14 +152,18 @@
             <div class="interface">
                 <h2 class="title">FALA <span class="">COMIGO</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu telefone:">
-                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
+                <form
+                action="https://formsubmit.co/ajax/darlantalisson123@gmail.com"
+                method="POST"
+                data-form
+              >                    
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome completo:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="telefone" id="telefone" placeholder="Seu telefone:">
+                    <textarea name="message" id="message" placeholder="Sua mensagem:" required></textarea>
 
                     <div class="btn-enviar"> 
-                        <input type="submit" value="Enviar">
+                        <input type="submit" data-button value="Enviar">
                     </div>
                 </form>
             </div>

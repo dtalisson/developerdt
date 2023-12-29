@@ -346,7 +346,18 @@ form .btn-enviar input {
 }
 form .btn-enviar input:hover { 
     transform: scale(1.05);
+}
+.success,
+.error {
+  text-align: center;
+}
 
+.success {
+  color: #00FF08;
+}
+
+.error {
+  color: tomato;
 }
 
 
