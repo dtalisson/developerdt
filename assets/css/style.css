@@ -83,7 +83,7 @@ header .btn-contato button:hover {
     box-shadow: 0px 0px 8px #00FF08;
 } 
 /* BOTÃO INTERFACE  */
-header .interface .logo a { 
+.interface .logo a { 
     font-size: 1.8rem;
     font-weight: bold;
     color: #00FF08;
@@ -241,7 +241,7 @@ section.about {
 .about .ladoDireitoAbout .btn-social  { 
     margin: 1rem 0rem;
 }
-.about .ladoDireitoAbout .btn-social button { 
+.btn-social button { 
     width: 50px;
     font-size: 2.2rem;
     height: 50px;
@@ -252,14 +252,13 @@ section.about {
     cursor: pointer;
     transition: .2s;
 }
-.about .ladoDireitoAbout .btn-social button:hover { 
+.btn-social button:hover { 
     transform: scale(1.05);
 }
 
 section.portfolio { 
     padding: 80px 4%;
     margin: 5rem 0rem;
-    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.13)
 }
 section.portfolio .flex { 
     justify-content: space-around;  
@@ -359,9 +358,41 @@ form .btn-enviar input:hover {
 .error {
   color: tomato;
 }
+footer { 
+    padding: 100px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+footer .flex { 
+    justify-content: space-between;
+}
+footer .line-footer .logo { 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
 
+.border { 
+    border-top: 2px solid #00FF08;
+    padding: 1rem 0rem
+}
+footer .line-footer  p { 
+    color: #00FF08;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+footer .line-footer a { 
+    color: white;
+    font-size:1.5rem;
+    font-weight: bold;   
+}
 
+footer .line-footer a:hover { 
+    color: #ffffff94
+}
 
 
     
