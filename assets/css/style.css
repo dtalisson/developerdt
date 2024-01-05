@@ -396,5 +396,63 @@ footer .line-footer a:hover {
     color: #ffffff94
 }
 
+@media screen and (max-width: 1020px) {
+    /* CABEÇALHO */
+    .navegacao, header .btn-contato { 
+        display: none;
+    }
+    .menu-principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .flex { 
+        display: flex;
+        flex-direction: column;
+    }
+    .ladoEsquerdo-menu-principal { 
+        width: 100%;
+        margin: auto;
+        padding: 3rem 4rem;
+    }
+    .ladoDireito-menu-principal { 
+        width: 70%;
+        
+    }
+    .ladoEsquerdo-menu-principal .btn-contato button { 
+       display: flex;
+       margin: auto;
+    }
+    
+}
+/* media query 1020 px */
+
+@media screen and (max-width: 425px) { 
+    .interface .logo a { 
+        font-size: 1rem;
+        padding: 0rem 0.5rem;     
+    }
+    .ladoDireito-menu-principal { 
+        width: 90%;
+    }
+    .ladoEsquerdo-menu-principal { 
+        width: 100%;
+        margin: auto;
+        padding: 3rem 0rem;
+    }
+    .ladoEsquerdo-menu-principal h1 { 
+        font-size: 2rem;
+        text-align: center;
+    }
+    .ladoEsquerdo-menu-principal p { 
+        font-size: 1.1rem;
+        text-align: justify
+    }
+    .ladoEsquerdo-menu-principal .btn-contato button { 
+        width: 200px;
+        text-align: center;
+        font-size: 1rem;
+     }
+}
+
 
     
