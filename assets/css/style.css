@@ -405,6 +405,9 @@ footer .line-footer a:hover {
         display: flex;
         flex-direction: column-reverse;
     }
+    .menu-especialidades .box-especialidades { 
+        margin: 8rem 2rem;
+    }
     .flex { 
         display: flex;
         flex-direction: column;
@@ -422,10 +425,105 @@ footer .line-footer a:hover {
        display: flex;
        margin: auto;
     }
+    .about .flex { 
+        display: flex;
+        flex-direction: row;       
+    }
+    .portfolio .flex { 
+        align-items: center; 
+    }
+    
     
 }
 /* media query 1020 px */
 
+@media screen and (max-width: 800px) { 
+
+    .about .flex { 
+        display: flex;
+        flex-direction: column;
+    }
+    .about .ladoEsquerdoAbout { 
+        width: 60%;
+        margin: auto;   
+    }
+    .about .ladoEsquerdoAbout img { 
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .about .ladoDireitoAbout { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .about .ladoDireitoAbout h2 {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        line-height: 45px;
+        font-weight: bold;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .about .ladoDireitoAbout p { 
+        margin: 2rem 2rem;
+        text-align: justify;
+        font-size: 1.5rem;
+        color: rgba(255, 255, 255, 0.548);
+    }
+    footer .btn-social { 
+        
+        margin: 1rem 0rem;
+    }
+}
+/* MEDIA QUERY 800PX */
+@media screen and (max-width: 650px) { 
+    .ladoEsquerdo-menu-principal h1 {
+        font-size: 2.3rem;
+        text-align: center;      
+    }
+    h2.title {
+        font-size: 2rem;
+    }
+    .menu-especialidades .box-especialidades i { 
+        font-size: 5rem;
+        color:#00ff08d5;
+    }
+    .about .ladoDireitoAbout { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .about .ladoDireitoAbout h2 {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        line-height: 45px;
+        font-weight: bold;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .about .ladoDireitoAbout p { 
+        margin: 2rem 2rem;
+        text-align: justify;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.548);
+    }
+    footer .btn-social { 
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        margin: 1rem 0rem;
+    }
+    .menu-especialidades .flex {
+        gap: 0rem;
+    }
+}
+/* MEDIA QUERY 600PX  */
 @media screen and (max-width: 425px) { 
     .interface .logo a { 
         font-size: 1rem;
@@ -440,11 +538,11 @@ footer .line-footer a:hover {
         padding: 3rem 0rem;
     }
     .ladoEsquerdo-menu-principal h1 { 
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     .ladoEsquerdo-menu-principal p { 
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: justify
     }
     .ladoEsquerdo-menu-principal .btn-contato button { 
@@ -452,7 +550,35 @@ footer .line-footer a:hover {
         text-align: center;
         font-size: 1rem;
      }
+     .about .ladoEsquerdoAbout { 
+        width: 80%;
+        margin: auto;   
+    }
+     footer .btn-social button {
+        width: 30px;
+        font-size: 1.5rem;
+        height: 30px;
+        border-radius: 50%;
+        margin: 0.2rem;
+        border: none;
+        background: #00FF08;
+        cursor: pointer;
+        transition: .2s;
+    }
+     footer .line-footer p {
+        color: #00FF08;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+     footer .line-footer a { 
+        color: white;
+        font-size:1rem;
+        font-weight: bold;   
+    }
 }
+/* MEDIA QUERY 425PX */
 
 
     
