@@ -581,5 +581,80 @@ footer .line-footer a:hover {
 }
 /* MEDIA QUERY 425PX */
 
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
 
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+#header {
+    position: relative;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+    .navegacao ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0;
+        background-color: #394159;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        transition: height 1s ease;
+        z-index: 1000;
+    }
+
+    .navegacao ul.active {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+      
+        
+    }
+    .navegacao a { 
+        color: #c1c1c1;
+        font-size: 1.5rem;
+        margin:.5rem 0rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+    .menu-hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+}
     
